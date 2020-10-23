@@ -12,7 +12,12 @@ jobs:
           command: |
             echo "CI is '$CI'" 
             echo "CIRCLE_SHA1 is '$CIRCLE_SHA1'" 
+            echo "CIRCLE_BUILD_NUM is '$CIRCLE_BUILD_NUM'" 
             echo "CIRCLE_BRANCH is '$CIRCLE_BRANCH'" 
+            echo "CIRCLE_PROJECT_REPONAME is '$CIRCLE_PROJECT_REPONAME'" 
+            echo "CIRCLE_TAG is '$CIRCLE_TAG'" 
+            echo "CIRCLE_NODE_TOTAL is '$CIRCLE_NODE_TOTAL'" 
+            echo "CIRCLE_NODE_INDEX is '$CIRCLE_NODE_INDEX'" 
           
 workflows:
   version: 2
